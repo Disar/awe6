@@ -36,6 +36,7 @@
  * <p>ASession includes target specific code so is implemented using the awe6.core.drivers package.</p>
  * @author	Robert Fell
  **/
+/*
 #if awe6DriverRemap
 typedef ASession = haxe.macro.MacroType<[ awe6.core.Macros.driverRemap( "Session" ) ]>;
 #elseif ( cpp || neko )
@@ -47,3 +48,6 @@ typedef ASession = awe6.core.drivers.openfl.html5.Session;
 #else
 typedef ASession = awe6.core.drivers.ASession;
 #end
+*/
+
+typedef ASession = awe6.core.drivers.ASession;

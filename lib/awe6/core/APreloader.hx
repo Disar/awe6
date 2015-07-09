@@ -36,6 +36,7 @@ package awe6.core;
  * <p>APreloader includes target specific code so is implemented using the awe6.core.drivers package.</p>
  * @author	Robert Fell
  */
+/*
 #if awe6DriverRemap
 typedef APreloader = haxe.macro.MacroType<[ awe6.core.Macros.driverRemap( "Preloader" ) ]>;
 #elseif ( cpp || neko )
@@ -47,3 +48,6 @@ typedef APreloader = awe6.core.drivers.openfl.html5.Preloader;
 #else
 typedef APreloader = awe6.core.drivers.APreloader;
 #end
+*/
+
+typedef APreloader = awe6.core.drivers.APreloader;

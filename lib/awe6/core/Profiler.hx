@@ -34,6 +34,7 @@ package awe6.core;
  * <p>Profiler includes target specific code so is implemented using the awe6.core.drivers package.</p>
  * @author	Robert Fell
  */
+/*
 #if awe6DriverRemap
 typedef Profiler = haxe.macro.MacroType<[ awe6.core.Macros.driverRemap( "Profiler" ) ]>;
 #elseif ( cpp || neko )
@@ -45,3 +46,6 @@ typedef Profiler = awe6.core.drivers.openfl.html5.Profiler;
 #else
 typedef Profiler = awe6.core.drivers.AProfiler;
 #end
+*/
+
+typedef Profiler = awe6.core.drivers.AProfiler;

@@ -35,7 +35,7 @@ package awe6.core;
  * <p>AudioManager includes target specific code so is implemented using the awe6.core.drivers package.</p>
  * @author	Robert Fell
  */
-#if awe6DriverRemap
+/*#if awe6DriverRemap
 typedef AudioManager = haxe.macro.MacroType<[ awe6.core.Macros.driverRemap( "AudioManager" ) ]>;
 #elseif ( cpp || neko )
 typedef AudioManager = awe6.core.drivers.openfl.native.AudioManager;
@@ -46,3 +46,6 @@ typedef AudioManager = awe6.core.drivers.openfl.html5.AudioManager;
 #else
 typedef AudioManager = awe6.core.drivers.AAudioManager;
 #end
+*/
+
+typedef AudioManager = awe6.core.drivers.AAudioManager;

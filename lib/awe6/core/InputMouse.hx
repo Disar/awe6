@@ -36,6 +36,7 @@ package awe6.core;
  * <p>InputMouse includes target specific code so is implemented using the awe6.core.drivers package.</p>
  * @author	Robert Fell
  */
+/*
 #if awe6DriverRemap
 typedef InputMouse = haxe.macro.MacroType<[ awe6.core.Macros.driverRemap( "InputMouse" ) ]>;
 #elseif ( cpp || neko )
@@ -46,4 +47,6 @@ typedef InputMouse = awe6.core.drivers.flash.InputMouse;
 typedef InputMouse = awe6.core.drivers.openfl.html5.InputMouse;
 #else
 typedef InputMouse = awe6.core.drivers.AInputMouse;
-#end
+#end*/
+
+typedef InputMouse = awe6.core.drivers.AInputMouse;

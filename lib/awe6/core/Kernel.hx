@@ -35,7 +35,7 @@ package awe6.core;
  * <p>Kernel includes target specific code so is implemented using the awe6.core.drivers package.</p>
  * @author	Robert Fell
  */
-#if awe6DriverRemap
+/*#if awe6DriverRemap
 typedef Kernel = haxe.macro.MacroType<[ awe6.core.Macros.driverRemap( "Kernel" ) ]>;
 #elseif ( cpp || neko )
 typedef Kernel = awe6.core.drivers.openfl.native.Kernel;
@@ -45,4 +45,6 @@ typedef Kernel = awe6.core.drivers.flash.Kernel;
 typedef Kernel = awe6.core.drivers.openfl.html5.Kernel;
 #else
 typedef Kernel = awe6.core.drivers.AKernel;
-#end
+#end*/
+
+typedef Kernel = awe6.core.drivers.AKernel;

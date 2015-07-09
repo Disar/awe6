@@ -35,7 +35,7 @@ package awe6.core;
  * <p>InputKeyboard includes target specific code so is implemented using the awe6.core.drivers package.</p>
  * @author	Robert Fell
  */
-#if awe6DriverRemap
+/*#if awe6DriverRemap
 typedef InputKeyboard = haxe.macro.MacroType<[ awe6.core.Macros.driverRemap( "InputKeyboard" ) ]>;
 #elseif ( cpp || neko )
 typedef InputKeyboard = awe6.core.drivers.openfl.native.InputKeyboard;
@@ -45,4 +45,6 @@ typedef InputKeyboard = awe6.core.drivers.flash.InputKeyboard;
 typedef InputKeyboard = awe6.core.drivers.openfl.html5.InputKeyboard;
 #else
 typedef InputKeyboard = awe6.core.drivers.AInputKeyboard;
-#end
+#end*/
+
+typedef InputKeyboard = awe6.core.drivers.AInputKeyboard;

@@ -36,7 +36,7 @@ package awe6.core;
  * <p>AFactory includes target specific code so is implemented using the awe6.core.drivers package.</p>
  * @author	Robert Fell
  **/
-
+/*
 #if awe6DriverRemap
 typedef AFactory = haxe.macro.MacroType<[ awe6.core.Macros.driverRemap( "Factory" ) ]>;
 #elseif ( cpp || neko )
@@ -47,4 +47,6 @@ typedef AFactory = awe6.core.drivers.flash.Factory;
 typedef AFactory = awe6.core.drivers.openfl.html5.Factory;
 #else
 typedef AFactory = awe6.core.drivers.AFactory;
-#end
+#end*/
+
+typedef AFactory = awe6.core.drivers.AFactory;

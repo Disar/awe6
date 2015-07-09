@@ -35,6 +35,7 @@ package awe6.core;
  * <p>APreloader includes target specific code so is implemented using the awe6.core.drivers package.</p>
  * @author	Robert Fell
  */
+/*
 #if awe6DriverRemap
 typedef SceneTransition = haxe.macro.MacroType<[ awe6.core.Macros.driverRemap( "SceneTransition" ) ]>;
 #elseif ( cpp || neko )
@@ -45,4 +46,6 @@ typedef SceneTransition = awe6.core.drivers.flash.SceneTransition;
 typedef SceneTransition = awe6.core.drivers.openfl.html5.SceneTransition;
 #else
 typedef SceneTransition = awe6.core.drivers.ASceneTransition;
-#end
+#end*/
+
+typedef SceneTransition = awe6.core.drivers.ASceneTransition;
