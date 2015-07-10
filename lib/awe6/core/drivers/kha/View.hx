@@ -1,6 +1,5 @@
 package awe6.core.drivers.kha;
 import awe6.core.drivers.AView;
-import flash.display;
 
 /**
  * ...
@@ -30,7 +29,7 @@ class View extends AView
 
 	override private function set_x( p_value:Float ):Float
 	{
-		//context.x = p_value;
+		context.x = p_value;
 		return super.set_x( p_value );
 	}
 	
